@@ -8,8 +8,8 @@
         Title="MainWindow" Height="600" Width="600">
     <Grid>
         <Button x:Name="exercise1_button" Content="Exercise 1" HorizontalAlignment="Left" Height="100" Margin="40,50,0,0" VerticalAlignment="Top" Width="500" FontSize="36" Background="#FFC1C1C1" Click="exercise1_button_Click"/>
-        <Button x:Name="exercise2_button" Content="Exercise 2" HorizontalAlignment="Left" Height="100" Margin="40,225,0,0" VerticalAlignment="Top" Width="500" FontSize="36" Background="#FFC1C1C1"/>
-        <Button x:Name="exercise3_button" Content="Exercise 3" HorizontalAlignment="Left" Height="100" Margin="40,400,0,0" VerticalAlignment="Top" Width="500" FontSize="36" Background="#FFC1C1C1"/>
+        <Button x:Name="exercise2_button" Content="Exercise 2" HorizontalAlignment="Left" Height="100" Margin="40,225,0,0" VerticalAlignment="Top" Width="500" FontSize="36" Background="#FFC1C1C1" Click="exercise2_button_Click"/>
+        <Button x:Name="exercise3_button" Content="Exercise 3" HorizontalAlignment="Left" Height="100" Margin="40,400,0,0" VerticalAlignment="Top" Width="500" FontSize="36" Background="#FFC1C1C1" Click="exercise3_button_Click"/>
 
     </Grid>
 </Window>

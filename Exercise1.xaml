@@ -11,11 +11,12 @@
         <Label x:Name="label1" Content="Check number of character:" HorizontalAlignment="Left" Height="39" Margin="20,450,0,0" VerticalAlignment="Top" Width="181" Background="#FFB9B9B9" FontSize="14"/>
 
         <TextBlock x:Name="ContentFile_textBlock" HorizontalAlignment="Left" Height="250" Margin="20,117,-228,-90" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
-        <TextBox x:Name="CharInput_textBox" HorizontalAlignment="Left" Height="40" Margin="220,450,0,-220" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Background="White" BorderBrush="#FF003AFF" MaxLength="1" MaxLines="1" TextAlignment="Center" FontSize="22" Foreground="Red"/>
+        <TextBox x:Name="CharInput_textBox" HorizontalAlignment="Left" Height="40" Margin="242,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Background="White" BorderBrush="#FF003AFF" MaxLength="1" MaxLines="1" TextAlignment="Center" FontSize="22" Foreground="Red"/>
 
-        <Button x:Name="Check_button" Content="Check" HorizontalAlignment="Left" Height="40" Margin="300,450,-128,-220" VerticalAlignment="Top" Width="120" Click="Check_button_Click"/>
+        <Button x:Name="Check_button" Content="Check" HorizontalAlignment="Left" Height="40" Margin="321,450,0,0" VerticalAlignment="Top" Width="120" Click="Check_button_Click"/>
         <Button x:Name="BrowseFile_button" Content="Browse TEXT file..." HorizontalAlignment="Left" Height="40" Margin="175,20,-133,0" VerticalAlignment="Top" Width="250" Click="BrowseFile_button_Click"/>
         <Button x:Name="button" Content="EXIT" HorizontalAlignment="Left" Height="21" Margin="480,539,0,0" VerticalAlignment="Top" Width="81" Click="button_Click"/>
+        <Label x:Name="label2" Content="Case sensitive!" HorizontalAlignment="Left" Height="24" Margin="217,490,0,0" VerticalAlignment="Top" Width="104"/>
 
     </Grid>
 </Window>

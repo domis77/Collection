@@ -22,7 +22,6 @@ namespace Collection
     public partial class Exercise1 : Window
     {
         Counter counter;
-        //= new Counter();
 
         public Exercise1()
         {
@@ -32,14 +31,11 @@ namespace Collection
         private void BrowseFile_button_Click(object sender, RoutedEventArgs e)
         {
             Stream fileStream = null;
-            var textList = new List<char>();
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Select text file";
             openFileDialog.Filter = "txt file (*.txt)|*.txt";
             openFileDialog.Multiselect = false;
-
-            openFileDialog.InitialDirectory = "c:\\"; //tmp
 
             openFileDialog.ShowDialog();
             try
@@ -117,7 +113,7 @@ namespace Collection
                     counter++;
                 }
             }
-            System.Windows.Forms.MessageBox.Show("Character " + wantedChar + " occurred " + counter + " times.");
+            System.Windows.Forms.MessageBox.Show("Character '" + wantedChar + "' occurred " + counter + " times.");
         }
     }
 }

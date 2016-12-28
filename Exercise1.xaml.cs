@@ -37,6 +37,7 @@ namespace Collection
             openFileDialog.Filter = "txt file (*.txt)|*.txt";
             openFileDialog.Multiselect = false;
 
+            System.Windows.Forms.MessageBox.Show("Sample file located in 'ExampleDataFile' project folder", null, MessageBoxButtons.OK, MessageBoxIcon.Information);
             openFileDialog.ShowDialog();
             try
             {

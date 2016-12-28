@@ -7,8 +7,27 @@
         mc:Ignorable="d"
         Title="Exercise2" Height="600" Width="600">
     <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="480" Margin="10,80,0,0" VerticalAlignment="Top" Width="572"/>
-        <Button x:Name="button" Content="test" HorizontalAlignment="Left" Height="21" Margin="20,20,0,0" VerticalAlignment="Top" Width="62" Click="click_buttonTest"/>
+        <Button x:Name="browseJson_button" Content="Browse... [JSON]" HorizontalAlignment="Left" Height="25" Margin="25,10,0,0" VerticalAlignment="Top" Width="550" Click="browseJson_button_Click"/>
+       
+        <Label x:Name="label" Content="Sort by:" HorizontalAlignment="Left" Height="30" Margin="25,40,0,0" VerticalAlignment="Top" Width="240" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="#FFD4D2D2"/>
+        <ComboBox x:Name="sortBy_comboBox" HorizontalAlignment="Left" Height="30" Margin="270,40,0,0" VerticalAlignment="Top" Width="300">
+            <ComboBoxItem Content="First name" Selected="ComboBoxItem_Selected_firstName"/>
+            <ComboBoxItem Content="Last name" Selected="ComboBoxItem_Selected_lastName"/>
+            <ComboBoxItem Content="Post code" Selected="ComboBoxItem_Selected_postCode"/>
+            <ComboBoxItem Content="City" Selected="ComboBoxItem_Selected_city"/>
+            <ComboBoxItem Content="Street" Selected="ComboBoxItem_Selected_street"/>
+        </ComboBox>
 
+        <ListView x:Name="addressBook_listView" HorizontalAlignment="Left" Height="461" Margin="25,80,0,0" VerticalAlignment="Top" Width="550">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First name" DisplayMemberBinding="{Binding firstName}"/>
+                    <GridViewColumn Header="Last name" DisplayMemberBinding="{Binding lastName}"/>
+                    <GridViewColumn Header="Post code" DisplayMemberBinding="{Binding postCode}"/>
+                    <GridViewColumn Header="City" DisplayMemberBinding="{Binding city}"/>
+                    <GridViewColumn Header="Street" DisplayMemberBinding="{Binding street}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
